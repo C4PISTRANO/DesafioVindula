@@ -1,7 +1,7 @@
 # Desafio proposto pela empresa Vindula Intranet:
 
 <a hrfe="#">
-  <img src="https://github.com/C4PISTRANO/DesafioVindula/blob/main/img/puppies.jpg" width="600px">
+  <img src="https://github.com/C4PISTRANO/DesafioVindula/blob/main/img/puppies.jpg">
 </a>
 
 O desafio consiste em criar uma aplicação de Sistema de Banco de Cadastro de Cachorros onde serão inseridos: nome, peso e raça. <br>
