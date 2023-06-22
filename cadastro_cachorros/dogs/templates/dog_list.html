@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Dogs</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Weight</th>
+        <th>Breed</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dog in dogs %}
+      <tr>
+        <td>{{ dog.name }}</td>
+        <td>{{ dog.weight }}</td>
+        <td>{{ dog.breed.name }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
